@@ -8,7 +8,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::get("/v17/customers/{id}/googleAds:searchStream", \App\Http\Controllers\GoogleFakeResponse::class);
-Route::get("/v20.0/act_{id}/insights", \App\Http\Controllers\FacebookFakeResponse::class);
-Route::get("/v1beta/properties/{id}:runReport", \App\Http\Controllers\AnalyticsFakeResponse::class);
-Route::get("/shop/sales", \App\Http\Controllers\ShopFakeResponse::class);
+Route::any("/v17/customers/{id}/googleAds:searchStream", \App\Http\Controllers\GoogleFakeResponse::class);
+Route::any("/v20.0/act_{id}/insights", \App\Http\Controllers\FacebookFakeResponse::class);
+Route::any("/v1beta/properties/{id}:runReport", \App\Http\Controllers\AnalyticsFakeResponse::class);
+Route::any("/shop/sales", \App\Http\Controllers\ShopFakeResponse::class);

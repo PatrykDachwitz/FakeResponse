@@ -20,7 +20,7 @@ class AnalyticsFakeResponse extends Controller
             ],
             "metricValues" => [
                 [
-                    "value" => rand(1, 9900)
+                    "value" => rand(100, 9900)
                 ]
             ]
         ];
