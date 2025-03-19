@@ -43,7 +43,9 @@ class GoogleFakeResponse extends Controller
 
 
         return response([
-            'results' => $this->getFakeResponseLast50Day($idCompany)
+            0 => [
+                'results' => $this->getFakeResponseLast50Day($idCompany)
+            ]
         ]);
     }
 }
